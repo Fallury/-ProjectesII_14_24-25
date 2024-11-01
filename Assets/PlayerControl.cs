@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] float speed;
 
+    Vector3 move;
 
-    public float movSpeed;
-    float speedX, speedY;
-    Rigidbody2D rb;
-
-
-    void Start()
+    private void Update()
     {
-         rb = GetComponent<Rigidbody2D>();   
+        move = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0).normalized;
+        Debug.Log(move);
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-        speedY = Input.GetAxisRaw("Vertical") * movSpeed;
-        rb.velocity = new Vector2 (speedX, speedY);
+        rb.MovePosition(transform.position + (move * speed * Time.fixedDeltaTime));
     }
 }
