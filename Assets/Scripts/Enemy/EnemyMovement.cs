@@ -21,12 +21,30 @@ public class EnemyMovement : MonoBehaviour
             }
             else
             {
-                transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+                if (Vector2.Distance(transform.position, Player.position) < 1.5)
+                {
+                    Attack();
+                }
+                else
+                {
+                    transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+                }
             }
         }
         else
-        {       
-            transform.position = Vector2.MoveTowards(transform.position, TowerDefence.position, speed * Time.deltaTime); 
+        {
+            if (Vector2.Distance(transform.position, TowerDefence.position) < 1.75)
+            {
+                Attack();
+            }
+            else 
+            {
+                transform.position = Vector2.MoveTowards(transform.position, TowerDefence.position, speed * Time.deltaTime);
+            }
         }
+    }
+    private void Attack()
+    {
+        Debug.Log("Attack");
     }
 }
