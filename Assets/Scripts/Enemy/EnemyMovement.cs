@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            if (Vector2.Distance(transform.position, TowerDefence.position) < 0.4375)
+            if (Vector2.Distance(transform.position, TowerDefence.position) < 0.65)
             {
                 Attack();
             }
