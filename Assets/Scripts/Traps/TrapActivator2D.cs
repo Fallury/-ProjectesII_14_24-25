@@ -4,34 +4,33 @@ using UnityEngine;
 
 public class TrapActivator2D : MonoBehaviour
 {
-    public GameObject trap;
+    public GameObject trap; 
     private bool isTrapActive = false; 
 
     
     private void OnTriggerEnter2D(Collider2D other)
     {
         
-        if (other.CompareTag("Player") && !isTrapActive)
+        if (!isTrapActive)
         {
-            ActivateTrap(other.gameObject); 
-        }
-        else if (other.CompareTag("Enemy") && !isTrapActive)
-        {
-            ActivateTrap(other.gameObject);
+            if (other.CompareTag("Player"))
+            {
+                ActivateTrap(other.gameObject); 
+            }
+            else if (other.CompareTag("Enemy"))
+            {
+                ActivateTrap(other.gameObject); 
+            }
         }
     }
 
    
     private void OnTriggerExit2D(Collider2D other)
     {
-        
-        if (other.CompareTag("Player") && isTrapActive)
+       
+        if (other.CompareTag("Player") || other.CompareTag("Enemy"))
         {
-            DeactivateTrap(other.gameObject); 
-        }
-        else if (other.CompareTag("Enemy") && isTrapActive)
-        {
-            DeactivateTrap(other.gameObject); 
+            DeactivateTrap(); 
         }
     }
 
@@ -40,45 +39,44 @@ public class TrapActivator2D : MonoBehaviour
     {
         Debug.Log("Trampa activada");
 
-        // Aquí puedes agregar lo que sucederá cuando la trampa se active,
-        
+       
         isTrapActive = true;
 
+       
+        if (target.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(5f); 
+            }
+        }
 
-        /* if (target.CompareTag("Player"))
-         {
-             PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
-             if (playerHealth != null)
-             {
-                 playerHealth.TakeDamage(10f); 
-             }
-         }
+        if (target.CompareTag("Enemy"))
+        {
+            EnemyHealth enemyHealth = target.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(5f); 
+            }
+        }
 
-         if (target.CompareTag("Enemy"))
-         {
-             EnemyHealth enemyHealth = target.GetComponent<EnemyHealth>();
-             if (enemyHealth != null)
-             {
-                 enemyHealth.TakeDamage(10f); 
-             }
-         }
-
-        */
+       
         if (trap != null)
         {
-            trap.SetActive(true); 
+            trap.SetActive(true);
         }
     }
-       
+
     
-    private void DeactivateTrap(GameObject target)
+    private void DeactivateTrap()
     {
         Debug.Log("Trampa desactivada");
 
-        // Aquí puedes agregar lo que sucederá cuando la trampa se desactive.
+        
         isTrapActive = false;
 
-       
+        
         if (trap != null)
         {
             trap.SetActive(false); 
