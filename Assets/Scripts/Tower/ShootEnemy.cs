@@ -7,10 +7,11 @@ public class ShootEnemy : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private float timeBetweenShoots;
 
-    private void Start()
+private void Start()
     {
         StartCoroutine(Shoot());
     }
+
 
     IEnumerator Shoot()
     {
