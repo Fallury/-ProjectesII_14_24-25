@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4454830544378283686, guid: cad506c4f8cf57f4a8608de14e48e151, type: 3}
-  shootingInterval: 0.7
+  shootingInterval: 1
   projectileSpeed: 10
   damage: 1
 --- !u!1 &933461830
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8cbac76b170e0f4196da4b937c049a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  isAlive: 1
 --- !u!1 &1125993963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7417342727842982056, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}

@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ShootEnemy : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private float timeBetweenShoots;
+    [SerializeField] private float timeBetweenShoots;  
 
-private void Start()
+   private void Start()
     {
-        StartCoroutine(Shoot());
+        StartCoroutine(Shoot());  
     }
-
 
     IEnumerator Shoot()
     {

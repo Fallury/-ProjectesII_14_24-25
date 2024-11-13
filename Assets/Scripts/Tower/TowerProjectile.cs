@@ -17,7 +17,7 @@ public class TowerProjectile : MonoBehaviour
     }
 
     private void LaunchProjectile()
-    {
+    {           
         Vector2 directionToEnemy = (enemy.position - transform.position).normalized;
         rb.velocity = directionToEnemy * speed;
 

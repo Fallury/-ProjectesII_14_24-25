@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float health = 10f;
+    public bool isAlive = true;
+    private float health = 10.0f;
 
     public void TakeDamage(float amount)
     {
@@ -20,7 +21,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Enemy died.");
-        Destroy(gameObject); 
+        isAlive = false;
+        Destroy(gameObject);
     }
 }
