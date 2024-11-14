@@ -665,6 +665,10 @@ PrefabInstance:
       propertyPath: TowerDefence
       value: 
       objectReference: {fileID: 768426095}
+    - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: attackDamage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7616550870043535117, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: m_Name
       value: Enemy
