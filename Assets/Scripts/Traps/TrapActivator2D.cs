@@ -48,7 +48,7 @@ public class TrapActivator2D : MonoBehaviour
             PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(5f); 
+                playerHealth.TakeDamage(5); 
             }
         }
 

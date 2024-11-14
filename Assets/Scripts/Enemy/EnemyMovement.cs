@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Transform TowerDefence;
     [SerializeField] private Transform Player;
 
+    [SerializeField] private int attackDamage = 10;
     private void Update()
     {
         if (Vector2.Distance(transform.position, TowerDefence.position) > minDistanceToTowerrDefence)
@@ -23,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 if (Vector2.Distance(transform.position, Player.position) < 0.375)
                 {
-                    Attack();
+                    Attack(Player);
                 }
                 else
                 {
@@ -35,16 +36,34 @@ public class EnemyMovement : MonoBehaviour
         {
             if (Vector2.Distance(transform.position, TowerDefence.position) < 0.65)
             {
-                Attack();
+                Attack(TowerDefence);
             }
-            else 
+            else
             {
                 transform.position = Vector2.MoveTowards(transform.position, TowerDefence.position, speed * Time.deltaTime);
             }
         }
     }
-    private void Attack()
+    private void Attack(Transform target)
     {
-        Debug.Log("Attack");
+
+        if (target.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(attackDamage);
+                Debug.Log("Attacking Player!");
+            }
+        }
+        else if (target.CompareTag("TowerDefence"))
+        {
+            TowerHealth towerHealth = target.GetComponent<TowerHealth>();
+            if (towerHealth != null)
+            {
+                towerHealth.TakeDamage(attackDamage);
+                Debug.Log("Attacking Tower!");
+            }
+        }
     }
 }

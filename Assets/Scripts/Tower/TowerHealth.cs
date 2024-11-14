@@ -2,28 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class TowerHealth : MonoBehaviour
 {
-    public float health = 100f; 
+    public float health = 200f;
 
-    
+
     public void TakeDamage(float amount)
     {
         health -= amount;
-        Debug.Log("Player Health: " + health);
+        Debug.Log("Tower Health: " + health);
 
-       
+
         if (health <= 0f)
         {
             Die();
         }
     }
 
-    
+
     private void Die()
     {
-        Debug.Log("Player died.");
-        Destroy(gameObject); 
+        Debug.Log("Tower died.");
+        Destroy(gameObject);
+
     }
-    
+
 }

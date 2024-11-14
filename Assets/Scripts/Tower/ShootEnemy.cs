@@ -21,4 +21,4 @@ public class ShootEnemy : MonoBehaviour
             Instantiate(projectilePrefab, transform.position, Quaternion.identity); 
         }
     }
-}
+}   
