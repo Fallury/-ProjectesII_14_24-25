@@ -4,27 +4,32 @@ using UnityEngine;
 
 public class TowerHealth : MonoBehaviour
 {
-    public float health = 200f;
-
-
+    public float towerHealth = 200f;
+    private bool isDead = false; 
     public void TakeDamage(float amount)
     {
-        health -= amount;
-        Debug.Log("Tower Health: " + health);
+        if (isDead) return; 
 
+        towerHealth -= amount;
+        Debug.Log("Tower Health: " + towerHealth);
 
-        if (health <= 0f)
+        if (towerHealth <= 0f)
         {
             Die();
         }
     }
 
-
     private void Die()
     {
+        if (isDead) return; 
+
+        isDead = true;
         Debug.Log("Tower died.");
-        Destroy(gameObject);
 
+        //Escena fin de partida
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+
+    
+        Destroy(gameObject, 1f); 
     }
-
 }
