@@ -11,7 +11,10 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Transform TowerDefence;
     [SerializeField] private Transform Player;
 
-    [SerializeField] private int attackDamage = 10;
+    [SerializeField] private int attackDamage = 1;
+    [SerializeField] private float attackInterval = 5f;
+    private float lastAttackTime = 0f; // Tiempo del último ataque
+
     private void Update()
     {
         if (Vector2.Distance(transform.position, TowerDefence.position) > minDistanceToTowerrDefence)
@@ -22,7 +25,7 @@ public class EnemyMovement : MonoBehaviour
             }
             else
             {
-                if (Vector2.Distance(transform.position, Player.position) < 0.375)
+                if (Vector2.Distance(transform.position, Player.position) < 0.375f)
                 {
                     Attack(Player);
                 }
@@ -34,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            if (Vector2.Distance(transform.position, TowerDefence.position) < 0.65)
+            if (Vector2.Distance(transform.position, TowerDefence.position) < 0.65f)
             {
                 Attack(TowerDefence);
             }
@@ -44,8 +47,14 @@ public class EnemyMovement : MonoBehaviour
             }
         }
     }
+
     private void Attack(Transform target)
     {
+        
+        if (Time.time - lastAttackTime < attackInterval) return;
+
+        
+        lastAttackTime = Time.time;
 
         if (target.CompareTag("Player"))
         {

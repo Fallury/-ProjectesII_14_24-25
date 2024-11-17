@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float health = 100f; 
+    public float health = 1f; 
 
     
     public void TakeDamage(float amount)
