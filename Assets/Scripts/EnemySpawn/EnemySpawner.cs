@@ -5,7 +5,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefab;      // Prefab del enemigo
     public Transform[] spawnPoints;     // Array de puntos de spawn
     public float spawnInterval = 3f;    // Intervalo de tiempo entre cada spawn
-    public int maxEnemies = 10;         // Cantidad máxima de enemigos a generar
+    public int maxEnemies = 20;         // Cantidad máxima de enemigos a generar
     private int currentEnemyCount = 0;  // Contador actual de enemigos generados
 
     private void Start()
