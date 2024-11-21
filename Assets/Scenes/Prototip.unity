@@ -11593,12 +11593,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: maxEnemies
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: enemyPrefab
       value: 
       objectReference: {fileID: 933461830}
+    - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
+      propertyPath: spawnInterval
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: spawnPoints.Array.size
       value: 1
