@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1876027047673030331, guid: e7b7e8b8ea0d65046a251eac8ba4bfa2, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1876027047673030331, guid: e7b7e8b8ea0d65046a251eac8ba4bfa2, type: 3}
       propertyPath: timeBetweenShoots
@@ -315,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343646001538270619, guid: 1a72fb7241d42ed48981ea4d8154bd84, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8225880796431240898, guid: 1a72fb7241d42ed48981ea4d8154bd84, type: 3}
       propertyPath: speed
