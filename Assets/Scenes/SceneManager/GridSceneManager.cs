@@ -11,9 +11,6 @@ public class GridSceneManager : MonoBehaviour
     // Referencia al Transform del jugador
     [SerializeField] private Transform player;
 
-    // Coordenadas de la escena fija (siempre cargada)
-    private Vector2Int fixedScene = new Vector2Int(0, 0);
-
     // Escenas actualmente cargadas
     private HashSet<Vector2Int> loadedScenes = new HashSet<Vector2Int>();
 
@@ -43,9 +40,6 @@ public class GridSceneManager : MonoBehaviour
     {
         // Calcula las escenas que deberían estar cargadas
         HashSet<Vector2Int> scenesToLoad = GetScenesInRange(currentCell, 1);
-
-        // Agrega la escena fija (0.0) al conjunto de escenas a cargar
-        scenesToLoad.Add(fixedScene);
 
         // Descarga las escenas fuera del rango
         foreach (Vector2Int scene in loadedScenes)
