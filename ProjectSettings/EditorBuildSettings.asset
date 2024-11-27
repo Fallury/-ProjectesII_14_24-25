@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneManager/EscenaPrincipal.unity
     guid: 94b0585d96fb49a4396a3511a9b69f5b
   - enabled: 1
+    path: Assets/Scenes/SceneManager/EscenasDeOleadas/Oleada_1.unity
+    guid: 1a9d05f2fc5fbc8489b15b51d0b985bb
+  - enabled: 1
+    path: Assets/Scenes/SceneManager/EscenasDeOleadas/Oleada_2.unity
+    guid: fc6cfea3b1c103246a1352f5e236739c
+  - enabled: 1
     path: "Assets/Scenes/SceneManager/Cuadr\xEDculaDeEscenas/Scene_-1_-1.unity"
     guid: 366f561d7dfede6498e2e4ff7ccd1313
   - enabled: 1
