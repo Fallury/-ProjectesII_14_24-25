@@ -21,6 +21,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        
         isAlive = false;
         Destroy(gameObject);
     }

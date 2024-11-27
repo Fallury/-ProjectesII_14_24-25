@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TowerHealth : MonoBehaviour
 {
-    public float towerHealth = 200f;
+    public float towerHealth = 2;
     private bool isDead = false; 
     public void TakeDamage(float amount)
     {
@@ -26,8 +26,8 @@ public class TowerHealth : MonoBehaviour
         isDead = true;
         Debug.Log("Tower died.");
 
-        //Escena fin de partida
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+       
+        UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
 
     
         Destroy(gameObject, 1f); 
