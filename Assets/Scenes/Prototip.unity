@@ -355,7 +355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816341024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.17, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25228,8 +25228,52 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1833916071431503201, guid: 1a72fb7241d42ed48981ea4d8154bd84, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4048998509973932877}
+    - targetCorrespondingSourceObject: {fileID: 1833916071431503201, guid: 1a72fb7241d42ed48981ea4d8154bd84, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4048998509973932876}
   m_SourcePrefab: {fileID: 100100000, guid: 1a72fb7241d42ed48981ea4d8154bd84, type: 3}
+--- !u!1 &4048998509973932875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1833916071431503201, guid: 1a72fb7241d42ed48981ea4d8154bd84, type: 3}
+  m_PrefabInstance: {fileID: 4048998509973932874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4048998509973932876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048998509973932875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a0049c0ab2079468713196632e5643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1438490401}
+  placementLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  rotationSpeed: 45
+--- !u!114 &4048998509973932877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048998509973932875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2415ee87fb10fa645a53552c7c56d588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traps:
+  - trapPrefab: {fileID: 7417342727842982056, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
+    previewPrefab: {fileID: 3211713934293453210, guid: 162f883aaf6b92e48a12a1125848e991, type: 3}
+    quantity: 2
 --- !u!1001 &4140350667229858720
 PrefabInstance:
   m_ObjectHideFlags: 0
