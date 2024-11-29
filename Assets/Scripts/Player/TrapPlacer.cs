@@ -40,7 +40,7 @@ public class TrapPlacer : MonoBehaviour
 
         if (rotationInput != 0)
         {
-            currentRotation *= Quaternion.Euler(0, rotationInput, 0); 
+            currentRotation *= Quaternion.Euler(0, 0, rotationInput); 
             if (currentPreview != null)
             {
                 currentPreview.transform.rotation = currentRotation;
@@ -68,12 +68,13 @@ public class TrapPlacer : MonoBehaviour
                 currentPreview.transform.rotation = currentRotation; 
             }
 
-            
-            Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, placementLayer))
+
+            Vector2 worldPos = playerCamera.ScreenToWorldPoint(Input.mousePosition);
+            float trapRadius = 0.2f;
+            if (!Physics2D.OverlapCircle(worldPos, trapRadius))
             {
                 currentPreview.SetActive(true);
-                currentPreview.transform.position = hit.point;
+                currentPreview.transform.position = worldPos;
             }
             else
             {
@@ -91,11 +92,11 @@ public class TrapPlacer : MonoBehaviour
         GameObject selectedTrap = inventory.GetSelectedTrap();
         if (selectedTrap != null)
         {
-            Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, placementLayer))
+            Vector2 worldPos = playerCamera.ScreenToWorldPoint(Input.mousePosition);
+            float trapRadius = 0.2f;
+            if (!Physics2D.OverlapCircle(worldPos, trapRadius)) 
             {
-                
-                Instantiate(selectedTrap, hit.point, currentRotation);
+                Instantiate(selectedTrap, worldPos, currentRotation);
                 inventory.UseTrap();
                 Debug.Log("Trampa colocada.");
             }
