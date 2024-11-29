@@ -138,7 +138,7 @@ PrefabInstance:
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: enemyPrefab
       value: 
-      objectReference: {fileID: 912206688}
+      objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: spawnPoints.Array.size
       value: 1
@@ -237,7 +237,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6454823682714524891, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
   m_PrefabInstance: {fileID: 476453716}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &912206687
+--- !u!1001 &546716086
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -245,17 +245,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2975579657175572516, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1902845058, guid: 3139999faae984a4398ccddead505072, type: 3}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5264402389990933560, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5264402389990933560, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.625
       objectReference: {fileID: 0}
     - target: {fileID: 5264402389990933560, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.625
       objectReference: {fileID: 0}
     - target: {fileID: 5264402389990933560, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -299,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: speed
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: Player
@@ -332,13 +344,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7616550870043535117, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 546716088}
   m_SourcePrefab: {fileID: 100100000, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
---- !u!1 &912206688 stripped
+--- !u!1 &546716087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7616550870043535117, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
-  m_PrefabInstance: {fileID: 912206687}
+  m_PrefabInstance: {fileID: 546716086}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &546716088
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546716087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5a3c284598af3847a16b571f536a184, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &915500410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -354,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: enemyPrefab
       value: 
-      objectReference: {fileID: 912206688}
+      objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: spawnInterval
       value: 3

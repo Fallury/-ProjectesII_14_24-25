@@ -15,6 +15,14 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float attackInterval = 5f;
     private float lastAttackTime = 0f; // Tiempo del último ataque
 
+    private Animator enemyAnimator;
+    private SpriteRenderer enemySpriteRender;
+
+    private void Start()
+    {
+        enemyAnimator = GetComponent<Animator>();
+        enemySpriteRender = GetComponent<SpriteRenderer>();
+    }
     private void Update()
     {
         if (Vector2.Distance(transform.position, TowerDefence.position) > minDistanceToTowerrDefence)
@@ -46,6 +54,8 @@ public class EnemyMovement : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, TowerDefence.position, speed * Time.deltaTime);
             }
         }
+        enemyAnimator.SetFloat("moveX", transform.position.x);
+        enemyAnimator.SetFloat("moveY", transform.position.y);
     }
 
     private void Attack(Transform target)
