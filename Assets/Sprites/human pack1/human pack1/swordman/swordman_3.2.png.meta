@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 194cd8b4582bbd7429fd79831f9a84a6
+guid: 767930fd27c9ba34f8288a0879757537
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: swordman_3_0
+      name: swordman_3.2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54cbbc53625741c4c90ca1830f83d826
-      internalID: 547470539
+      spriteID: f0354bf26dc8821469a30508a2584432
+      internalID: -1666050703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_1
+      name: swordman_3.2_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01d2f0944c5f81940a31c08edca5608b
-      internalID: -103533415
+      spriteID: d8f68834a9391e44091946567339bc0f
+      internalID: 443295340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_2
+      name: swordman_3.2_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e49f3b030bc116a4ab89acd08b075187
-      internalID: 1617579292
+      spriteID: f4aeec99d83b48141856f97cf7d36de4
+      internalID: -442158284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_3
+      name: swordman_3.2_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9094ed0458e91d3468e45cb94ca47001
-      internalID: 1585394810
+      spriteID: e3d0d6b0cd073184c8ef32a993ebf5fa
+      internalID: 1317535775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_4
+      name: swordman_3.2_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68bbd5884a1477e46ad796e96c3f24fb
-      internalID: -675122638
+      spriteID: cc283578bb4aa4941b4058b474034a2f
+      internalID: 320948805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_5
+      name: swordman_3.2_5
       rect:
         serializedVersion: 2
         x: 320
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a21a7706319e5846ab754a1ab0f9712
-      internalID: -269573033
+      spriteID: a05ed3badcc015e489c26d2644758e23
+      internalID: -1235247973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_6
+      name: swordman_3.2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3999d2eeed09aac43a456f74fa2e4094
-      internalID: 143284241
+      spriteID: 37a8595f6f19fc94e8d325db79efb7b7
+      internalID: -65794096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_7
+      name: swordman_3.2_7
       rect:
         serializedVersion: 2
         x: 64
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 062c0cdc3a778a24dbd92d221a1a22b9
-      internalID: 1038592307
+      spriteID: 36705ab4d8415ec489557e79012e2845
+      internalID: -1976272830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_8
+      name: swordman_3.2_8
       rect:
         serializedVersion: 2
         x: 128
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c63b41a0ae5ec3041bd21eccd4c2d568
-      internalID: -1449933138
+      spriteID: d415b9c0c8c1a16459d7ba7629fa1ee9
+      internalID: -64750922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_9
+      name: swordman_3.2_9
       rect:
         serializedVersion: 2
         x: 192
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97c4df310b1ee0c469b4d23782021e24
-      internalID: 1928985587
+      spriteID: 3dd93156759b5a940b3464233d1b4dbb
+      internalID: 1802837955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_10
+      name: swordman_3.2_10
       rect:
         serializedVersion: 2
         x: 256
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d517a94740c745342a40bb39ce670a5a
-      internalID: 502421651
+      spriteID: 1d5962f05c3e6434886b23af0c2ac897
+      internalID: -925680272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_11
+      name: swordman_3.2_11
       rect:
         serializedVersion: 2
         x: 320
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8571717e534fac84aa2ef1c28a51239b
-      internalID: 1442335695
+      spriteID: 2b7424bfa278d294385221660e734a0d
+      internalID: 2119177639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_12
+      name: swordman_3.2_12
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae6914d15ed1563418e967eeb632da6c
-      internalID: 1966698489
+      spriteID: c5bf47724b383de4f868cab5a56df470
+      internalID: 792740497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_13
+      name: swordman_3.2_13
       rect:
         serializedVersion: 2
         x: 64
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef4e8624543f3544ba13a5bf4e61746f
-      internalID: 1593964696
+      spriteID: 9bf7f334999568f4989a73c2541b163c
+      internalID: -107884604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_14
+      name: swordman_3.2_14
       rect:
         serializedVersion: 2
         x: 128
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a2e04ad29e26bc4e8c0b99896a137e6
-      internalID: 949052216
+      spriteID: bd003c9af826eb143b711575c905503d
+      internalID: 1757930267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_15
+      name: swordman_3.2_15
       rect:
         serializedVersion: 2
         x: 192
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f5f1d587f4c9e943916999314c33cb2
-      internalID: 1657104963
+      spriteID: 748533bdaec3df54eb682b07caf6528d
+      internalID: 995229195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_16
+      name: swordman_3.2_16
       rect:
         serializedVersion: 2
         x: 256
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d90452f3a5830fc439a2fc438dd1d900
-      internalID: 1774941724
+      spriteID: 1e8c2d08324d87446a47ad045f958cf2
+      internalID: -279144347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_17
+      name: swordman_3.2_17
       rect:
         serializedVersion: 2
         x: 320
@@ -481,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 893cea476197d9046ba9d2f467752121
-      internalID: 655086998
+      spriteID: 4907ce977d3cdb84f9915a078d65bd2a
+      internalID: 1570672592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_18
+      name: swordman_3.2_18
       rect:
         serializedVersion: 2
         x: 0
@@ -502,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b83d223e6133b8647b0a296a298d14d9
-      internalID: 9158104
+      spriteID: b0259f9a59fb59e46b39ef20e1307c94
+      internalID: -835216630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_19
+      name: swordman_3.2_19
       rect:
         serializedVersion: 2
         x: 64
@@ -523,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e2008831f159f24984dad48e3ac905a
-      internalID: 1024777525
+      spriteID: 9a1f97e90fc9b674180b37e54ce8b737
+      internalID: 305055972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_20
+      name: swordman_3.2_20
       rect:
         serializedVersion: 2
         x: 128
@@ -544,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a141f588832f514eac2dc59b85ce4ea
-      internalID: 929837122
+      spriteID: 3f87bf68ab5825845b327a3e84605c0a
+      internalID: -1256657212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_21
+      name: swordman_3.2_21
       rect:
         serializedVersion: 2
         x: 192
@@ -565,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06c58f046534a6c47a894e61c30e8e64
-      internalID: -765193607
+      spriteID: 5cd55dfef97230a4c8f5d6069035e8db
+      internalID: 1520788619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_22
+      name: swordman_3.2_22
       rect:
         serializedVersion: 2
         x: 256
@@ -586,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6619d7f6cbea85d40a9a08372734b52f
-      internalID: 497698864
+      spriteID: 15add4c8d9036e3439b725907ae21ac8
+      internalID: -869882544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_23
+      name: swordman_3.2_23
       rect:
         serializedVersion: 2
         x: 320
@@ -607,17 +607,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 900e5db35be3af3418ce03eda0d1969b
-      internalID: -246893497
+      spriteID: d96952c772526c34187bf0f9197870ad
+      internalID: -1962406006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_24
+      name: swordman_3.2_24
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 0
         width: 64
         height: 64
@@ -628,17 +628,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dec868f18c5c9b40bde8c809eca4d57
-      internalID: -1344728353
+      spriteID: f702ea03c8e935e4482ce85f6bb951c4
+      internalID: 435504957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swordman_3_25
+      name: swordman_3.2_25
       rect:
         serializedVersion: 2
-        x: 64
+        x: 320
         y: 0
         width: 64
         height: 64
@@ -649,8 +649,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 257bded766ba68b4a9fe7f5a26ee8678
-      internalID: 1660615660
+      spriteID: 91eb1b0667cfa0143ad089d656bf9c31
+      internalID: 1235403713
       vertices: []
       indices: 
       edges: []
@@ -666,32 +666,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      swordman_3_0: 547470539
-      swordman_3_1: -103533415
-      swordman_3_10: 502421651
-      swordman_3_11: 1442335695
-      swordman_3_12: 1966698489
-      swordman_3_13: 1593964696
-      swordman_3_14: 949052216
-      swordman_3_15: 1657104963
-      swordman_3_16: 1774941724
-      swordman_3_17: 655086998
-      swordman_3_18: 9158104
-      swordman_3_19: 1024777525
-      swordman_3_2: 1617579292
-      swordman_3_20: 929837122
-      swordman_3_21: -765193607
-      swordman_3_22: 497698864
-      swordman_3_23: -246893497
-      swordman_3_24: -1344728353
-      swordman_3_25: 1660615660
-      swordman_3_3: 1585394810
-      swordman_3_4: -675122638
-      swordman_3_5: -269573033
-      swordman_3_6: 143284241
-      swordman_3_7: 1038592307
-      swordman_3_8: -1449933138
-      swordman_3_9: 1928985587
+      swordman_3.2_0: -1666050703
+      swordman_3.2_1: 443295340
+      swordman_3.2_10: -925680272
+      swordman_3.2_11: 2119177639
+      swordman_3.2_12: 792740497
+      swordman_3.2_13: -107884604
+      swordman_3.2_14: 1757930267
+      swordman_3.2_15: 995229195
+      swordman_3.2_16: -279144347
+      swordman_3.2_17: 1570672592
+      swordman_3.2_18: -835216630
+      swordman_3.2_19: 305055972
+      swordman_3.2_2: -442158284
+      swordman_3.2_20: -1256657212
+      swordman_3.2_21: 1520788619
+      swordman_3.2_22: -869882544
+      swordman_3.2_23: -1962406006
+      swordman_3.2_24: 435504957
+      swordman_3.2_25: 1235403713
+      swordman_3.2_3: 1317535775
+      swordman_3.2_4: 320948805
+      swordman_3.2_5: -1235247973
+      swordman_3.2_6: -65794096
+      swordman_3.2_7: -1976272830
+      swordman_3.2_8: -64750922
+      swordman_3.2_9: 1802837955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
