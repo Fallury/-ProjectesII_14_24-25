@@ -21259,6 +21259,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8567360103344471783, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
+      propertyPath: damageAmount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8955886456237247235, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
       propertyPath: m_Name
       value: ExplosiveTrap
