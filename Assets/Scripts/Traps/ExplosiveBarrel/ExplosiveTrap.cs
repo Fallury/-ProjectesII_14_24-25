@@ -2,55 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosiveTrap : MonoBehaviour
+public class ExplosiveBarrel : MonoBehaviour
 {
     public float vida = 1f;
-    public float radioDeDaño = 4.5f;
-    public float daño = 50f;
-    public GameObject efectoExplosion;
+    public float damageRadius = 5f; 
+    public float damageAmount = 10f; 
 
-    public void RecibirDaño(float dañoRecibido)
+    public void TakeDamage(float damage)
     {
-        vida -= dañoRecibido;
+        vida -= damage;
+        
+
         if (vida <= 0)
         {
-            Explotar();
+            Explode();
         }
     }
 
-    private void Explotar()
+    private void Explode()
     {
-        if (efectoExplosion != null)
-        {
-            Instantiate(efectoExplosion, transform.position, Quaternion.identity);
-        }
+        Debug.Log("¡Explosive Barrel explotó!");
 
-        Collider2D[] objetosAfectados = Physics2D.OverlapCircleAll(transform.position, radioDeDaño);
+      
+        Collider2D[] objectsInRange = Physics2D.OverlapCircleAll(transform.position, damageRadius);
 
-        foreach (Collider2D objeto in objetosAfectados)
+       
+        foreach (Collider2D obj in objectsInRange)
         {
-            // Verifica si el objeto tiene las etiquetas "Player" o "Enemy"
-            if (objeto.CompareTag("Player") || objeto.CompareTag("Enemy"))
+            if (obj.CompareTag("Player"))
             {
-                IDañable dañable = objeto.GetComponent<IDañable>();
-                if (dañable != null)
+                PlayerHealth playerHealth = obj.GetComponent<PlayerHealth>();
+                if (playerHealth != null)
                 {
-                    dañable.TakeDamage(daño);
+                    playerHealth.TakeDamage(damageAmount); 
+                    Debug.Log("Jugador dañado por la explosión");
+                }
+            }
+            else if (obj.CompareTag("Enemy"))
+            {
+                EnemyHealth enemyHealth = obj.GetComponent<EnemyHealth>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.TakeDamage(damageAmount); 
+                    Debug.Log("Enemigo dañado por la explosión");
                 }
             }
         }
 
-        Destroy(gameObject);
-    }
+        // Agregar efectos visuales o sonoros para la explosión
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, radioDeDaño);
+        Destroy(gameObject); 
     }
-}
-
-public interface IDañable
-{
-    void TakeDamage(float cantidadDeDaño);
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8567360103344471783}
   m_Layer: 0
   m_Name: ExplosiveTrap
-  m_TagString: Untagged
+  m_TagString: ExplosiveBarrel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,6 +162,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 1
-  "radioDeDa\xF1o": 1.5
-  "da\xF1o": 50
-  efectoExplosion: {fileID: 0}
+  damageRadius: 5
+  damageAmount: 10
