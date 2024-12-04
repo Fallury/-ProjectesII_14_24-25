@@ -17796,6 +17796,10 @@ PrefabInstance:
       propertyPath: trap
       value: 
       objectReference: {fileID: 7417342727842982056, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
+    - target: {fileID: 6797837973905505161, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
+      propertyPath: explosionRadius
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7417342727842982056, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
       propertyPath: m_Name
       value: Trap (1)
@@ -21221,11 +21225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933026601519247141, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.47
+      value: -2.43
       objectReference: {fileID: 0}
     - target: {fileID: 7933026601519247141, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.99
+      value: 3.02
       objectReference: {fileID: 0}
     - target: {fileID: 7933026601519247141, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21261,7 +21265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8567360103344471783, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
       propertyPath: damageAmount
-      value: 20
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8567360103344471783, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
+      propertyPath: damageRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8955886456237247235, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
       propertyPath: m_Name
@@ -25157,6 +25165,10 @@ PrefabInstance:
       propertyPath: trap
       value: 
       objectReference: {fileID: 7417342727842982056, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
+    - target: {fileID: 6797837973905505161, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
+      propertyPath: explosionRadius
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7417342727842982056, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
       propertyPath: m_Name
       value: Trap
@@ -25363,6 +25375,9 @@ MonoBehaviour:
   - trapPrefab: {fileID: 7417342727842982056, guid: 24abac5442d2985488d070d8e272bfd5, type: 3}
     previewPrefab: {fileID: 3211713934293453210, guid: 162f883aaf6b92e48a12a1125848e991, type: 3}
     quantity: 2
+  - trapPrefab: {fileID: 8955886456237247235, guid: 980bdc7940c6a7f46867c93f19efb07e, type: 3}
+    previewPrefab: {fileID: 491762268188142205, guid: 38e57dd37aaa16443abbb374b69b97f7, type: 3}
+    quantity: 1
 --- !u!1001 &4140350667229858720
 PrefabInstance:
   m_ObjectHideFlags: 0
