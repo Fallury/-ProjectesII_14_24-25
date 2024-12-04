@@ -6,23 +6,28 @@ public class TrapActivator2D : MonoBehaviour
 {
     public GameObject trap;
     private bool isTrapActive = false;
+    private float explosionRadius = 0.9f; 
+
+    private bool isInitialized = false;
+
+    private void Start()
+    {
+        StartCoroutine(InitializeTrap());
+    }
+
+    private IEnumerator InitializeTrap()
+    {
+        yield return new WaitForSeconds(0.1f);
+        isInitialized = true;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isTrapActive)
+        if (!isInitialized) return;
+
+        if (!isTrapActive && (other.CompareTag("Player") || other.CompareTag("Enemy")))
         {
-            if (other.CompareTag("Player"))
-            {
-                ActivateTrap(other.gameObject);
-            }
-            else if (other.CompareTag("Enemy"))
-            {
-                ActivateTrap(other.gameObject);
-            }
-            else if (other.CompareTag("ExplosiveBarrel")) 
-            {
-                DamageExplosiveBarrel(other.gameObject);
-            }
+            ActivateTrap(other.gameObject);
         }
     }
 
@@ -40,6 +45,7 @@ public class TrapActivator2D : MonoBehaviour
 
         isTrapActive = true;
 
+        
         if (target.CompareTag("Player"))
         {
             PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
@@ -58,24 +64,29 @@ public class TrapActivator2D : MonoBehaviour
             }
         }
 
+       
+        DamageBarrelsInRadius();
+
         if (trap != null)
         {
             trap.SetActive(true);
         }
     }
 
-    private void DamageExplosiveBarrel(GameObject barrel)
+    private void DamageBarrelsInRadius()
     {
-       
-        ExplosiveBarrel explosiveBarrel = barrel.GetComponent<ExplosiveBarrel>();
-        if (explosiveBarrel != null)
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
+        foreach (Collider2D collider in colliders)
         {
-            explosiveBarrel.TakeDamage(10f);
-        }
-
-        if (trap != null)
-        {
-            trap.SetActive(true);
+            if (collider.CompareTag("ExplosiveBarrel"))
+            {
+                ExplosiveBarrel explosiveBarrel = collider.GetComponent<ExplosiveBarrel>();
+                if (explosiveBarrel != null)
+                {
+                    Debug.Log("Daño aplicado al barril dentro del radio de la trampa");
+                    explosiveBarrel.TakeDamage(10f);
+                }
+            }
         }
     }
 
@@ -90,7 +101,13 @@ public class TrapActivator2D : MonoBehaviour
             trap.SetActive(false);
         }
     }
+
+   
 }
+
+
+
+
 
 
 
