@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float health = 1f; 
-
+    public float health = 1f;
+    [SerializeField] Slider playerHealthBarSlider;
     
     public void TakeDamage(float amount)
     {
         health -= amount;
+        playerHealthBarSlider.value = health;
+
         Debug.Log("Player Health: " + health);
 
        
