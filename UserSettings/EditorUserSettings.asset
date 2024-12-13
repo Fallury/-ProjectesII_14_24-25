@@ -6,31 +6,31 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5a0151005707500e595f542143700d4441151a78287973617c2f4b30b0b0326c
+      value: 51550c005c025903545d5d2015730a44134f4c797d2d71667e7c1f36b4e2653d
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 5504575157025e5d5f0b5f7414720644134e4b2e7f7d7060747d1862e1b1646d
+      value: 500702005003585f5a0a0a27142609444f4f1d78297c20367a2a1e37b3b3656b
       flags: 0
     RecentlyUsedSceneGuid-2:
-      value: 06500d0553505d580f580e72457b0d44174e4f2e752d736128284f6ae1e4673b
+      value: 5303070307035c5a5e08097a412208444f161a72297f2765282d4a62b0e3636f
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 5b55025556025909555a087a427a0d4446164a7f2a7d2031282b4a60b0e4306a
+      value: 50080551010d5d5e5c0f5521117b0d44444f4f78297f77677c714e66bae5633c
       flags: 0
     RecentlyUsedSceneGuid-4:
-      value: 5b520d0503545b0d0c0c0a2715770748154f4d2c7d7d7e627a7d4a35b4e1646a
+      value: 0106505653020c03090b0d2645270a4410164f2b2f2b74642c2b1860e4b76369
       flags: 0
     RecentlyUsedSceneGuid-5:
-      value: 565401555c035d5d545e592143760b44424e1d2c2e7b7531747e1930e3e43239
+      value: 53040d5653540a085e0b542614745a444e161a722e2a72617e2f4461b1b33668
       flags: 0
     RecentlyUsedSceneGuid-6:
-      value: 5705015600045f0f5858557047715b4440164f79752a7f6929711931b3b76568
+      value: 0052520250015b020e0b0d761425094446154e78287d2768782a4c30b7e13769
       flags: 0
     RecentlyUsedSceneGuid-7:
-      value: 5b0101555750505d0c0a092140740c44404e4c73747873317f794f62e6b96d6f
+      value: 5b07050252515c0c5b0a087545740a4412151e7a7a2c27617b2a4d35b5b6646f
       flags: 0
     RecentlyUsedSceneGuid-8:
-      value: 510007050154505d590b092043250f44444e4f7a757f7564292d4c6ae3e5306e
+      value: 57080502070451035c0b5a2444710644434e497b792d72357a284860b5b16c3b
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 5a055656500d5c5f54580a20447a5e44454e4e2b7f7d77612c701f65bbe6613a
@@ -43,7 +43,7 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 4
+  m_DesiredImportWorkerCount: 5
   m_StandbyImportWorkerCount: 2
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
