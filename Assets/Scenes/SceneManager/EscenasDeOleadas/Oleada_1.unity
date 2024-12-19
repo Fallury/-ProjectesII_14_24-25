@@ -232,12 +232,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2502177485585486029, guid: bcc6eb54bfa1e714d84c99f04d443380, type: 3}
     - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: towerRadius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: TowerDefence
       value: 
       objectReference: {fileID: 7430539831080603257, guid: b034be56ac6fdc84ebe6e64c4353b174, type: 3}
     - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: attackDamage
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: playerRadius
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6644201041156455413, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: attackInterval

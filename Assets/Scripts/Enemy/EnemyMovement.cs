@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float minDistanceToPlayer;
-    [SerializeField] private float minDistanceToTowerrDefence;
+    //Variables para el movimiento del enemigo
+    [SerializeField] public float speed;
+    [SerializeField] public float playerRadius;
+    [SerializeField] public float towerRadius;
     [SerializeField] private Transform TowerDefence;
     [SerializeField] private Transform Player;
+    private Rigidbody2D rb;
+    private Vector2 movement;
 
     [SerializeField] private int attackDamage = 1;
     [SerializeField] private float attackInterval = 5f;
@@ -18,16 +21,18 @@ public class EnemyMovement : MonoBehaviour
     private Animator enemyAnimator;
     private SpriteRenderer enemySpriteRender;
 
-    private void Start()
+    void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+
         enemyAnimator = GetComponent<Animator>();
         enemySpriteRender = GetComponent<SpriteRenderer>();
     }
-    private void Update()
+    void Update()
     {
-        if (Vector2.Distance(transform.position, TowerDefence.position) > minDistanceToTowerrDefence)
+        if (Vector2.Distance(transform.position, TowerDefence.position) > towerRadius)
         {
-            if (Vector2.Distance(transform.position, Player.position) > minDistanceToPlayer)
+            if (Vector2.Distance(transform.position, Player.position) > playerRadius)
             {
                 transform.position = Vector2.MoveTowards(transform.position, TowerDefence.position, speed * Time.deltaTime);
             }
@@ -54,6 +59,8 @@ public class EnemyMovement : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, TowerDefence.position, speed * Time.deltaTime);
             }
         }
+        rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
+
         enemyAnimator.SetFloat("moveX", transform.position.x);
         enemyAnimator.SetFloat("moveY", transform.position.y);
     }
