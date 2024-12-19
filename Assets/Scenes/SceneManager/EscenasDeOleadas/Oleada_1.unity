@@ -147,6 +147,30 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_Size.x
+      value: 0.93222654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_Size.y
+      value: 0.64077145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.20332354
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.8573482
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623736264804912001, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5264402389990933560, guid: 89dd0928505798142ab025ff82345ad4, type: 3}
       propertyPath: m_RootOrder
       value: 0
