@@ -18017,7 +18017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: maxEnemies
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: enemyPrefab
@@ -21250,12 +21250,13 @@ MonoBehaviour:
   - {fileID: 976215462}
   - {fileID: 634925398}
   currentRound: 1
-  enemiesToSpawn: 5
+  enemiesPerSpawner: 5
+  additionalEnemiesPerRound: 3
   trapInventory: {fileID: 41417354}
   trapPhaseUI: {fileID: 0}
   combatPhaseUI: {fileID: 0}
-  startRoundButton: {fileID: 0}
   additionalTrapsPerRound: 2
+  endTrapPhaseKey: 112
 --- !u!1 &2011052915
 GameObject:
   m_ObjectHideFlags: 0
@@ -25476,7 +25477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: maxEnemies
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1753218086152159971, guid: a4a7709e85382064ba46a702278d2bd0, type: 3}
       propertyPath: enemyPrefab

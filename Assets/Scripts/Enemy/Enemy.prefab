@@ -173,10 +173,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  minDistanceToPlayer: 3.5
-  minDistanceToTowerrDefence: 3.5
+  playerRadius: 0
+  towerRadius: 0
   TowerDefence: {fileID: 0}
   Player: {fileID: 0}
+  attackDamage: 1
+  attackInterval: 2
 --- !u!114 &2196604004825934715
 MonoBehaviour:
   m_ObjectHideFlags: 0

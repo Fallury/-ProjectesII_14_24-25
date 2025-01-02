@@ -4,27 +4,29 @@ using UnityEngine;
 
 public class RoundManager : MonoBehaviour
 {
-    public EnemySpawner[] spawners; // Array de spawners en el mapa
-    public int currentRound = 1;   // Ronda actual
-    public int enemiesPerSpawner = 5; // Enemigos por spawner en cada ronda
-    public int additionalEnemiesPerRound = 3; // Incremento de enemigos por ronda
-    public TrapInventory trapInventory; // Referencia al inventario de trampas
-    public GameObject trapPhaseUI; // UI para la fase de trampas (opcional)
-    public GameObject combatPhaseUI; // UI para la fase de combate (opcional)
-    public int additionalTrapsPerRound = 2; // Trampas extra por ronda
-    public KeyCode endTrapPhaseKey = KeyCode.P; // Tecla para finalizar la fase de trampas
+    public EnemySpawner[] spawners; 
+    public int currentRound = 1;   
+    public int enemiesPerSpawner = 5; 
+    public int additionalEnemiesPerRound = 3; 
+    public TrapInventory trapInventory; 
+    public GameObject trapPhaseUI; // UI para la fase de trampas 
+    public GameObject combatPhaseUI; // UI para la fase de combate 
+    public int additionalTrapsPerRound = 2; 
+    public KeyCode endTrapPhaseKey = KeyCode.P; 
 
-    private int enemiesDefeated = 0; // Contador de enemigos derrotados en la ronda actual
-    private bool isCombatPhase = true; // Indica si está en la fase de combate
+    private int enemiesDefeated = 0; 
+    private bool isCombatPhase = true; 
 
     void Start()
     {
+        
         StartCombatPhase();
+        
     }
 
     void Update()
     {
-        // Detectar la tecla para terminar la fase de trampas
+        
         if (!isCombatPhase && Input.GetKeyDown(endTrapPhaseKey))
         {
             StartNextRound();
@@ -45,11 +47,11 @@ public class RoundManager : MonoBehaviour
         isCombatPhase = true;
         enemiesDefeated = 0;
 
-        // Actualizar UI (opcional)
+        
         combatPhaseUI?.SetActive(true);
         trapPhaseUI?.SetActive(false);
 
-        // Activar spawners para la ronda actual
+        
         ActivateSpawnersForCurrentRound();
 
         Debug.Log($"Comienza la fase de combate de la ronda {currentRound}.");
@@ -59,17 +61,17 @@ public class RoundManager : MonoBehaviour
     {
         isCombatPhase = false;
 
-        // Desactivar todos los spawners
+        
         foreach (var spawner in spawners)
         {
-            spawner.StopSpawning(); // Asegúrate de detener el spawn en todos los spawners
+            spawner.StopSpawning();
         }
 
-        // Actualizar UI (opcional)
+        
         combatPhaseUI?.SetActive(false);
         trapPhaseUI?.SetActive(true);
 
-        // Añadir trampas al inventario
+        
         AddTrapsToInventory();
 
         Debug.Log($"Fase de combate terminada. Entra en la fase de colocación de trampas.");
@@ -86,7 +88,7 @@ public class RoundManager : MonoBehaviour
             {
                 spawners[i].enabled = true;
                 spawners[i].maxEnemies = enemiesPerSpawner + (currentRound - 1) * additionalEnemiesPerRound;
-                spawners[i].StartSpawning(); // Asegúrate de llamar a StartSpawning()
+                spawners[i].StartSpawning(); 
                 Debug.Log($"Spawner {i + 1} activado para la ronda {currentRound}.");
             }
             else
