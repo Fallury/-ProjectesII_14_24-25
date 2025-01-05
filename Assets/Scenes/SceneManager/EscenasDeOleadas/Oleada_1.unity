@@ -160,6 +160,7 @@ MonoBehaviour:
   enemigos:
   - {fileID: 2569592616109212505, guid: a29586c2b1833d944b52fe556954115c, type: 3}
   tiempoEnemigos: 1
+  numMaxEnemigos: 10
 --- !u!4 &43958801
 Transform:
   m_ObjectHideFlags: 0

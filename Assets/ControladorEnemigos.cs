@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ControladorEnemigos : MonoBehaviour
@@ -10,7 +8,9 @@ public class ControladorEnemigos : MonoBehaviour
     [SerializeField] private Transform[] puntos;
     [SerializeField] private GameObject[] enemigos;
     [SerializeField] private float tiempoEnemigos;
+    [SerializeField] private int numMaxEnemigos;
     private float tiempoSiguienteEnemigo;
+    private int enemigosEnEscena = 0;
 
     private void Start()
     {
@@ -23,7 +23,7 @@ public class ControladorEnemigos : MonoBehaviour
     {
         tiempoSiguienteEnemigo += Time.deltaTime;
 
-        if(tiempoSiguienteEnemigo >= tiempoEnemigos)
+        if (tiempoSiguienteEnemigo >= tiempoEnemigos && enemigosEnEscena < numMaxEnemigos)
         {
             tiempoSiguienteEnemigo = 0;
             CrearEnemigo();
@@ -35,5 +35,6 @@ public class ControladorEnemigos : MonoBehaviour
         Vector2 posicionAleatoria = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
 
         Instantiate(enemigos[numeroEnemigo], posicionAleatoria, Quaternion.identity);
+        enemigosEnEscena++;
     }
 }
