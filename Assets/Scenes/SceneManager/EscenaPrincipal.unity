@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 819950497}
   - component: {fileID: 819950499}
   - component: {fileID: 819950498}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloraDosTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10234,7 +10234,7 @@ GameObject:
   - component: {fileID: 945309309}
   - component: {fileID: 945309311}
   - component: {fileID: 945309310}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloraTresTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16446,7 +16446,7 @@ GameObject:
   - component: {fileID: 1002288268}
   - component: {fileID: 1002288267}
   - component: {fileID: 1002288266}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CollitionTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20991,7 +20991,7 @@ GameObject:
   - component: {fileID: 1124153057}
   - component: {fileID: 1124153059}
   - component: {fileID: 1124153058}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55868,7 +55868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2097620751}
   - component: {fileID: 2097620750}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55918,7 +55918,7 @@ GameObject:
   - component: {fileID: 2104202216}
   - component: {fileID: 2104202218}
   - component: {fileID: 2104202217}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloraTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62978,6 +62978,36 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 2, y: 22, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 74
+      m_TileSpriteIndex: 74
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 3, y: 22, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 74
+      m_TileSpriteIndex: 74
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 4, y: 22, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 74
+      m_TileSpriteIndex: 74
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 12, y: 22, z: 0}
     second:
       serializedVersion: 2
@@ -69068,7 +69098,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 8c4a9868a3eeed54eb27f8fd213b636e, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: db3a845e9cc6cc6459632e2be4ee03ae, type: 2}
-  - m_RefCount: 88
+  - m_RefCount: 91
     m_Data: {fileID: 11400000, guid: ccb33e52303807f49805f30c1377995b, type: 2}
   - m_RefCount: 44
     m_Data: {fileID: 11400000, guid: 8a2137fc33586e54f8729e7a4939b488, type: 2}
@@ -69515,7 +69545,7 @@ Tilemap:
     m_Data: {fileID: -1516155176, guid: ae53e9a5cd1ba974c8309a28d3521846, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1136533818, guid: ae53e9a5cd1ba974c8309a28d3521846, type: 3}
-  - m_RefCount: 88
+  - m_RefCount: 91
     m_Data: {fileID: 1240779228, guid: ae53e9a5cd1ba974c8309a28d3521846, type: 3}
   - m_RefCount: 44
     m_Data: {fileID: 1068703463, guid: ae53e9a5cd1ba974c8309a28d3521846, type: 3}
@@ -69814,7 +69844,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -232096410, guid: ae53e9a5cd1ba974c8309a28d3521846, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1292
+  - m_RefCount: 1295
     m_Data:
       e00: 1
       e01: 0
@@ -69833,7 +69863,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1292
+  - m_RefCount: 1295
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -70085,6 +70115,10 @@ PrefabInstance:
     - target: {fileID: 8859816605616725612, guid: bcc6eb54bfa1e714d84c99f04d443380, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8859816605616725612, guid: bcc6eb54bfa1e714d84c99f04d443380, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
